@@ -1,4 +1,3 @@
-
 let continuar = true
 while (continuar){
     let x = parseInt(prompt("Insira um número para calcular fatorial: "))
