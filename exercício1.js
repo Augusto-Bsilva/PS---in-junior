@@ -1,4 +1,3 @@
-//EXERCÍCIO 1:
 let a = parseInt(prompt())
 let b = parseInt(prompt())
 let c = parseInt(prompt())
