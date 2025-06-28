@@ -1,6 +1,6 @@
-let a = parseInt(prompt())
-let b = parseInt(prompt())
-let c = parseInt(prompt())
+let a = parseInt(prompt("Insira a variável a: "))
+let b = parseInt(prompt("Insira a variável b: "))
+let c = parseInt(prompt("Insira a variável c: "))
 
 let delta = (b**2) - 4*a*c
 if(delta > 0){
