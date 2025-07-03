@@ -9,21 +9,28 @@ function adicionarJogador (time,nome,idade,posição,pontuacao){
    return time 
 }
 function buscarPorPosicao (time,busca){
-   jogadoresDaPosicao = []
-   for(let i = 0; i < time.lenght; i++){
-      if (time.posição === busca){
-         jogadoresDaPosicao.push(time.nome)
+   let jogadoresDaPosicao = []
+   for(let i = 0; i < time.length; i++){
+      if (time[i].posição === busca){
+         jogadoresDaPosicao.push(time[i])
       }
+   }if (jogadoresDaPosicao.length === 0){
+    return "Não há jogadores dessa posição no momento"
+   }else {
+    return jogadoresDaPosicao
    }
-   return jogadoresDaPosicao        
 }
 function listarTime (time){
-    time.forEach((elemento) => {console.log(elemento)})
+    if (time.length > 0){
+         time.forEach((elemento) => {console.log(elemento)})
+    }else{
+        return "Não há nenhum jogador por enquanto"
+    }
 }   
 function calcularPontuacaoMedia (time){
     let soma = 0
     let contador = 0
-    for(let i = 0; i<time.lenght; i++){
+    for(let i = 0; i<time.length; i++){
        soma += time[i].pontuacao
        contador += 1
     }let media = soma / contador
@@ -48,7 +55,7 @@ while(continuar){
         console.log(listarTime(time))
     }else if (menu === 4){
         mediaPontos = calcularPontuacaoMedia(time)
-        console.log(mediaPontos)
+        console.log(`A pontuação média do time é de ${mediaPontos} pontos`)
     }else{
         alert("Encerrando sistema")
         continuar = false
