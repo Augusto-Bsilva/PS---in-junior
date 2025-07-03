@@ -1,7 +1,7 @@
 let vetor = parseInt(prompt("Insira a quantidade de números para a lista: "))
 let lista = []
 for (let i = 1; i <= vetor; i++ ){
-    let numero = parseInt(prompt("Insira um numero para alista: "))
+    let numero = parseInt(prompt("Insira um numero para a lista: "))
     lista.push(numero)
 }
 
