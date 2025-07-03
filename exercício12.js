@@ -14,6 +14,5 @@ for (let i = 1; i <= quantidade; i++ ){
     let numero = parseInt(prompt("Insira um numero para a lista: "))
     lista.push(numero)
 }
-
 unicoElemento = encontrarElementoUnico(lista)
 console.log(`O elemento que aparece apenas uma vez é ${unicoElemento}`)

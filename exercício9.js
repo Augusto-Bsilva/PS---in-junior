@@ -4,8 +4,6 @@ function authors (dados){
 return autores
 }
 
-
-
 let booksByCategory = [
 {category: "Romance",
 books: [

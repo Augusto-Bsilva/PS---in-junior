@@ -1,5 +1,6 @@
 let continuar = true 
 let fila = []
+
 while(continuar){
     let menu = parseInt(prompt("Insira 1 para novo cliente,  2 para atender cliente,  3 para sair"))
      if (fila.length === 0) {

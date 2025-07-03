@@ -66,7 +66,5 @@ author: "George Orwell", },
 {title: "O Fim da Infância", 
 author: "Arthur C. Clarke", },],},];
 
-
-
 booksCounted = countBooksInCategory(booksByCategory)
 console.log(booksCounted)
